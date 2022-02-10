@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <ResponsiveAppBar />
-      <img src={sharkTankBG} alt="Landing Background" style={{ justifyContent: "center", position: "fixed", top: 0, bottom: 0, right: 0, left: 0, zIndex: -1, }} />
+      <img src={sharkTankBG} alt="Landing Background" style={{ justifyContent: "center", position: "fixed", top: 0, bottom: 0, right: 0, left: 0, zIndex: -1, maxWidth:"100%" }} />
       <Box> <Typography align="center" variant="h4" sx={{ fontFamily: "Roboto", color: "#483492", marginTop: 10 }}>Come pitch in your ideas, business models and demonstrate your marketing skills</Typography> </Box>
       <Box>
         <Grid container spacing={5}>
