@@ -30,8 +30,8 @@ const App = () => {
         <Typography align="center" variant="h4" sx={{ fontFamily: "Roboto", color: "#fff", marginTop: 10 }}>Come pitch in your ideas, business models and demonstrate your marketing skills</Typography> 
       </Box> */}
       {/* <IdeaDetail /> */}
-      {/* <Landing /> */}
-      <CreatorProfile />
+      <Landing />
+      {/* <CreatorProfile /> */}
       {/* <Box>
         <Grid container spacing={5}>
           {[0, 1, 2].map(() => {return (<Grid item xs={3} display="flex" margin="0 auto">
