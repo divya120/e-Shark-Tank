@@ -65,7 +65,7 @@ const IdeaDetail = () => {
           Idea Title
         </Typography>
         <Typography variant="body1" sx={{ color: "#fff" }}>
-          by Fr. Dr. John Rose SJ
+          by Nihar Vira
         </Typography>
         <Box height={20} />
         <Typography

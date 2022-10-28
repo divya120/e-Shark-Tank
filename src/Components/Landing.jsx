@@ -14,7 +14,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LandingCardComponent = () => {
+const LandingCardComponent = ({value}) => {
   const classes = useStyles();
   return (
     <Box margin={2}>
@@ -29,15 +29,15 @@ const LandingCardComponent = () => {
         >
           <CardMedia
             component="img"
-            image="https://picsum.photos/350/200"
-            alt="idea-image"
+            image={value.url}
+            alt="idea"
             height="200"
             width="350"
           ></CardMedia>
           <CardContent>
             <Box>
-              <Typography variant="h5">Card component</Typography>
-              <Typography variant="body1">by creator name</Typography>
+              <Typography variant="h5" >{value.idea}</Typography>
+              <Typography variant="body1">by {value.name}</Typography>
             </Box>
             <Box>
               <Typography variant="body2" className={classes.multiLineEllipsis}>
@@ -68,13 +68,42 @@ const LandingCardComponent = () => {
 
 const Landing = () => {
   const classes = useStyles();
+
+  const dummyData = [
+    {
+      name: "Jay Prakash",
+      idea: "Ice Popsicles",
+      url: "https://cdn.shopify.com/s/files/1/0608/8805/5972/files/Skippi_logo.png?v=1646391995"
+    },
+    {
+      name: "Sinki Sharma",
+      idea: "CosIQ Skincare",
+      url: "https://brandemic.in/wp-content/uploads/2022/02/Cosiq.webp"
+    },
+    {
+      name: "Dolly Verma",
+      idea: "Modular Utility Vehicles",
+      url: "https://brandemic.in/wp-content/uploads/2022/02/Revamp-motors.webp"
+    },
+    {
+      name: "Vikram Singh",
+      idea: "Smart Helmets",
+      url: "https://justtotaltech.com/wp-content/uploads/2021/03/Top-8-Smart-Helmets-of-2021.png"
+    },
+    {
+      name: "Nihar Vira",
+      idea: "Quick Fast Foods",
+      url: "https://picsum.photos/350/200"
+    }
+  ];
+
   return (
     <Box className={classes.root}>
       <ImageList cols={3} container>
-        {[0, 1, 2, 3, 4].map((value) => {
+        {dummyData.map((value) => {
           return (
             <ImageListItem>
-              <LandingCardComponent />
+              <LandingCardComponent value={value}/>
             </ImageListItem>
           );
         })}
