@@ -3,25 +3,25 @@ import { Launcher } from "react-chat-window";
 
 const myMessageList = [
   {
-    author: "them",
+    author: "me",
     type: "text",
     data: {
-      text: "some text",
-    },
-  },
-  {
-    author: "me",
-    type: "emoji",
-    data: {
-      code: "someCode",
+      text: "Hi, I liked your idea and concept, ready to invest Rs. 50 lakhs with 10% equity in exchange. PFA the proposal",
     },
   },
   {
     author: "me",
     type: "file",
     data: {
-      url: "somefile.mp3",
-      fileName: "Any old name",
+      url: "Negotiation Contract.pdf",
+      fileName: "Negotiation Contract.pdf",
+    },
+  },
+  {
+    author: "them",
+    type: "text",
+    data: {
+      text: "Hello, thank you for your interest, that seems a fair deal, is it negotiable?",
     },
   },
 ];
